@@ -12,6 +12,7 @@
 		5A6E54EF21AE44B100BBE51E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E54ED21AE44B100BBE51E /* Main.storyboard */; };
 		5A6E54F121AE44B300BBE51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E54F021AE44B300BBE51E /* Assets.xcassets */; };
 		5A6E54F421AE44B300BBE51E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6E54F221AE44B300BBE51E /* LaunchScreen.storyboard */; };
+		5ABEE52221B12731008DC6B3 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABEE52121B12731008DC6B3 /* UIView+Anchor.swift */; };
 		6E08C5D8BC3CADEA960EC1A9 /* Pods_GrillBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDE667B0BE0A5FAD57DC9C /* Pods_GrillBox.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		5A6E54F021AE44B300BBE51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A6E54F321AE44B300BBE51E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A6E54F521AE44B300BBE51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABEE52121B12731008DC6B3 /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		9D67B2CDCA85FC43D1CF496F /* Pods-GrillBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrillBox/Pods-GrillBox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +72,22 @@
 			isa = PBXGroup;
 			children = (
 				5A6E54E921AE44B100BBE51E /* AppDelegate.swift */,
-				5A6E54EB21AE44B100BBE51E /* ViewController.swift */,
-				5A6E54ED21AE44B100BBE51E /* Main.storyboard */,
 				5A6E54F021AE44B300BBE51E /* Assets.xcassets */,
-				5A6E54F221AE44B300BBE51E /* LaunchScreen.storyboard */,
 				5A6E54F521AE44B300BBE51E /* Info.plist */,
+				5A6E54F221AE44B300BBE51E /* LaunchScreen.storyboard */,
+				5A6E54ED21AE44B100BBE51E /* Main.storyboard */,
+				5A6E54EB21AE44B100BBE51E /* ViewController.swift */,
+				5ABEE52021B12721008DC6B3 /* Extensions */,
 			);
 			path = GrillBox;
+			sourceTree = "<group>";
+		};
+		5ABEE52021B12721008DC6B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5ABEE52121B12731008DC6B3 /* UIView+Anchor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DF86F4D85A2B83C2E2A41F2A /* Pods */ = {
@@ -212,6 +223,7 @@
 			files = (
 				5A6E54EC21AE44B100BBE51E /* ViewController.swift in Sources */,
 				5A6E54EA21AE44B100BBE51E /* AppDelegate.swift in Sources */,
+				5ABEE52221B12731008DC6B3 /* UIView+Anchor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
