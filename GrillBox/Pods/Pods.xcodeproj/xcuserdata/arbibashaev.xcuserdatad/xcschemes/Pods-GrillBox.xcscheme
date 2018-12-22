@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6244AF26C1D821510A0081671F9127DB"
+               BlueprintIdentifier = "529BD752330E704BBC282AC4FF727612"
                BuildableName = "Pods_GrillBox.framework"
                BlueprintName = "Pods-GrillBox"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6244AF26C1D821510A0081671F9127DB"
+            BlueprintIdentifier = "529BD752330E704BBC282AC4FF727612"
             BuildableName = "Pods_GrillBox.framework"
             BlueprintName = "Pods-GrillBox"
             ReferencedContainer = "container:Pods.xcodeproj">

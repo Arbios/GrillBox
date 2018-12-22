@@ -7,48 +7,35 @@
 //
 
 import UIKit
-
-struct Post: Codable {
-    var userId: Int
-    var id: Int
-    var title: String
-    var body: String
-}
-
-
+import RxSwift
+import RxCocoa
+import Pastel
 
 class ViewController: UIViewController {
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let pastelView = PastelView(frame: view.bounds)
         
-        let myView = UIView()
-        myView.backgroundColor = .red
-        view.addSubview(myView)
-        myView.fillSuperview()
-        //        let myPost = Post(userId: "1", id: "MyID", title: "MyTitle", body: "MyPostBody")
+        // Custom Direction
+        pastelView.startPastelPoint = .bottomLeft
+        pastelView.endPastelPoint = .topRight
         
-        let urlString = "https://jsonplaceholder.typicode.com/posts"
-        guard let url = URL(string: urlString) else { return }
+        // Custom Duration
+        pastelView.animationDuration = 3.0
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else { return }
-            guard error == nil else { return }
-            
-            do {
-                let posts = try JSONDecoder().decode([Post].self, from: data)
-                
-                print(posts)
-            } catch {
-                print(error)
-            }
-            }.resume()
+        // Custom Color
+        pastelView.setColors([UIColor(red: 120/255, green: 69/255, blue: 35/255, alpha: 1),
+                              UIColor(red: 224/255, green: 122/255, blue: 55/255, alpha: 1),
+                              UIColor(red: 103/255, green: 55/255, blue: 24/255, alpha: 1)])
+        
+        pastelView.startAnimation()
+        view.insertSubview(pastelView, at: 0)
     }
     
-    
 }
-
-
 
 
